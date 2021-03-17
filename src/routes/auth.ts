@@ -4,11 +4,11 @@ const router: any = express.Router();
 
 // Routes
 
-let id;
+let id: Number, token: String, uid: String, password: String;
 
-router.get("/:reqid", (req: { reqid: number; }, res: { send: (arg0: string) => void; }) => {
-    id = req.params.reqid;
-    res.send(`The requested URL: \n${id}`);
+// Login API Script
+router.get('/test', (req: any, res: any) => {
+    res.json({ test: "test" })
 })
 
 // Export the Router
