@@ -1,10 +1,10 @@
 // import modules from external sources
 import * as colors from 'colors';
-import * as express from 'express';
-import * as morgan from 'morgan';
+import express from 'express';
+import morgan from 'morgan';
 
 // Varibles for the API
-const app: any = express();
+const app = express();
 
 // Routes for the app
 
@@ -15,3 +15,10 @@ app.use(morgan('combined'));
 const authRoutes: any = require('./routes/auth');
 
 app.use("/authentication", authRoutes);
+
+// Listen to the port given by the server or defined port!
+var port = process.env.PORT || 3001;
+
+app.listen(port, () => {
+    console.log(`[*] Listening on server: http://localhost:${port}`);
+})
