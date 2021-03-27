@@ -1,3 +1,4 @@
+
 ## Welcome to Speed History documentation!
 
 There is going to be 2 parts to this documentation, the first part is going to be on how to edit permissions and other settings via the web interface. The second part, _(for advance users only)_ will document how to change the settings and everything else in the code.
@@ -33,3 +34,5 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
