@@ -1,8 +1,6 @@
-## Welcome to GitHub Pages
+## Welcome to Speed History documentation!
 
-You can use the [editor on GitHub](https://github.com/TheMysteriousDeveloperOrg/speed-history/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+There is going to be 2 parts to this documentation, the first part is going to be on how to edit permissions and other settings via the web interface. The second part, _(for advance users only)_ will document how to change the settings and everything else in the code.
 
 ### Markdown
 
