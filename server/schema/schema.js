@@ -87,16 +87,47 @@ const RootQuery = new GraphQLObjectType({
 const Mutation = new GraphQLObjectType({
   name: 'Mutation',
   fields: {
+    // Adding authors to thou database!
     addAuthor: {
       type: AuthorType,
       args: {
-        name:
+        name: {type: GraphQLString},
+        age: {type: GraphQLInt},
+        role: {type: GraphQLString}
+      },
+      resolve(parent,args){
+        let author = new Author({
+          name: args.name,
+          age: args.age,
+          role: args.role
+        });
+        return author.save()
       }
     },
+    addPost: {
+      type: PostsType,
+      args: {
+        title: {type: GraphQLString},
+        description: {type: GraphQLString},
+        article: {type: GraphQLString},
+        catagory: {type: GraphQLString},
+        tags: {type: GraphQLString},
+      },
+      resolve(parent,args){
+        let post = new Posts({
+          title: args.title,
+          description: args.description,
+          article: args.article,
+          catagory: args.catagory,
+          tags: args.tags,
+        });
+      }
+    }
   }
 })
 
 // Export this schema
 module.exports = new GraphQLSchema({
-  query: RootQuery
+  query: RootQuery,
+  mutation: Mutation
 });

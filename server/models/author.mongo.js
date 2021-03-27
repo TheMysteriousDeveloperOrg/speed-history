@@ -6,7 +6,7 @@ const Schema = mongoose.Schema;
 
 // PostSchema
 const AuthorSchema = new Schema({
-  title: String,
+  name: String,
   age: Number,
   role: String
 });

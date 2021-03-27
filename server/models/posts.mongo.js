@@ -10,7 +10,7 @@ const PostsSchema = new Schema({
   description: String,
   article: String,
   catagory: String,
-  tags: Array
+  tags: String
 });
 
 // Export the module
